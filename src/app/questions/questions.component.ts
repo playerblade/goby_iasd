@@ -18,7 +18,8 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
   public road: number;
   public level: number;
   // private audio!: HTMLAudioElement;
-  isShake = false;
+  public isShake = false;
+  public nextLevel = false;
   @ViewChild('audioRef',{static: false}) audioRef!: ElementRef<HTMLAudioElement>;
 
   constructor(private _form:FormService) {
@@ -61,6 +62,7 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
       console.log(`Step: ${this.step}`);
       this.question = this.questions[this.step];
     }else{
+      this.nextLevel = true;
       // verify if exist next level
       if(this.level < this.dataSources.length - 1){
         this.level++;
@@ -73,6 +75,10 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
       }
     }
   }
+  public continueQuestions() {
+    this.nextLevel = false;
+  }
+  
   shakeMethod() {
     this.isShake = true;
     setTimeout(() => {
