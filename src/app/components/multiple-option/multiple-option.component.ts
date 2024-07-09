@@ -30,6 +30,7 @@ export class MultipleOptionComponent implements OnInit {
   }
 
   next(event:Event){
+    this.answered = false;
     this.continue.emit(event)
   }
 

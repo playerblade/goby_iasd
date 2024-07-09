@@ -1,22 +1,31 @@
 <!--<button (click)="next({step: 2, life: 90})">Next</button>-->
-<app-bar-progress [actualLife]="life" [road]="road" ></app-bar-progress>
-<app-multiple-option
-  *ngIf="question && question.type === 'multiple-option'"
-  [question]="question"
-  [step]="step"
-  [life]="life"
-  [road]="road"
-  (continue)="next($event)"
-></app-multiple-option>
-<app-multiple-picture
-  *ngIf="question && question.type === 'multiple-picture'"
-  [question]="question"
-  [step]="step"
-  [life]="life"
-  [road]="road"
-  (continue)="next($event)"
-></app-multiple-picture>
-<main *ngIf="endQuestion">
+<!-- <nav class="zoom-in">
+  <h2 style="text-align: center; margin-top: 1em;">Level {{level+1}}</h2>
+</nav> -->
+<nav [ngClass]="{'shake': isShake}">
+  <h2 style="text-align: center; margin-top: 1em;">Level {{level+1}}</h2>
+</nav>
+<div *ngIf="!endQuestion">
+  <app-bar-progress [actualLife]="life" [road]="road" ></app-bar-progress>
+  
+  <app-multiple-option
+    *ngIf="question && question.type === 'multiple-option'"
+    [question]="question"
+    [step]="step"
+    [life]="life"
+    [road]="road"
+    (continue)="next($event)"
+  ></app-multiple-option>
+  <app-multiple-picture
+    *ngIf="question && question.type === 'multiple-picture'"
+    [question]="question"
+    [step]="step"
+    [life]="life"
+    [road]="road"
+    (continue)="next($event)"
+  ></app-multiple-picture>
+</div>
+<main *ngIf="endQuestion" style="margin-top: 1em;">
   <audio #audioRef src="assets/songs/complete.aac"></audio>
   <h3>Finalizaste con <span style="color: #00ccbb">" {{life}} "</span> vidas!</h3>
   <br><br>

@@ -1,7 +1,7 @@
-import {AfterViewChecked, AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import { answer, Question } from '../interfaces/Question';
+import {AfterViewChecked, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { DataSourseQuestions, Question } from '../interfaces/Question';
 import { FormService } from '../services/form.service';
-
+// import { Questions } from '../model/questions.model';
 
 @Component({
   selector: 'app-questions',
@@ -10,18 +10,25 @@ import { FormService } from '../services/form.service';
 })
 export class QuestionsComponent implements OnInit, AfterViewChecked {
   public step: number;
-  public question! : Question;
-  public questions:any = [];
+  public question!: Question;
+  public questions: Question[] = [];
+  public dataSources: DataSourseQuestions[] = [];
   public endQuestion:boolean = false;
   public life: number;
   public road: number;
+  public level: number;
   // private audio!: HTMLAudioElement;
+  isShake = false;
   @ViewChild('audioRef',{static: false}) audioRef!: ElementRef<HTMLAudioElement>;
 
   constructor(private _form:FormService) {
     this.life = 5;
     this.step = 0;
     this.road = 0;
+    this.level = 0;
+    setTimeout(() => {
+      this.shakeMethod();
+    }, 100);
   }
 
   ngOnInit(): void {
@@ -37,16 +44,39 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
 
   public nextQuestion():void{
       this._form.getForm('questions').subscribe((res) => {
-        this.questions = res;
+        this.dataSources = res;
+        this.questions = res[this.level].question!;
+        // this.question = this.questions[this.step];
         this.question = this.questions[this.step];
         if(!this.question) this.endQuestion = true;
     })
   }
 
   public next(event: any):void{
-    this.step = Number(event.step);
+    // verify exist next question
     this.life = Number(event.life);
     this.road = Number(event.road);
-    this.nextQuestion();
+    if(this.step < this.questions.length - 1){
+      this.step = Number(event.step);
+      console.log(`Step: ${this.step}`);
+      this.question = this.questions[this.step];
+    }else{
+      // verify if exist next level
+      if(this.level < this.dataSources.length - 1){
+        this.level++;
+        this.step = 0;
+        this.questions = this.dataSources[this.level].question!;
+        this.question = this.questions[this.step];
+        this.shakeMethod();
+      } else {
+        this.endQuestion = true;
+      }
+    }
+  }
+  shakeMethod() {
+    this.isShake = true;
+    setTimeout(() => {
+      this.isShake = false;
+    },1000);
   }
 }

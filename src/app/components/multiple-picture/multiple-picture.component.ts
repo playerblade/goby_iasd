@@ -27,6 +27,7 @@ export class MultiplePictureComponent implements OnInit {
   }
 
   next(event:Event){
+    this.answered = false;
     this.continue.emit(event)
   }
 }

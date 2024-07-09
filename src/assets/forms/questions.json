@@ -1,120 +1,106 @@
 [
   {
-    "type": "multiple-option",
-    "label": "En el princio dios creo los cielos y la ................. (Genesis 1:1)",
-    "answers": [
+    "level": 1,
+    "question": [
       {
-        "label": "Agua",
-        "isCorrect": false
+        "type": "multiple-option",
+        "label": "En el princio dios creo los cielos y la ................. (Genesis 1:1)",
+        "answers": [
+          {
+            "label": "Agua",
+            "isCorrect": false
+          },
+          {
+            "label": "Aire",
+            "isCorrect": false
+          },
+          {
+            "label": " Tierra",
+            "isCorrect": true
+          },
+          {
+            "label": "Selva",
+            "isCorrect": false
+          }
+        ]
       },
       {
-        "label": "Aire",
-        "isCorrect": false
-      },
-      {
-        "label": " Tierra",
-        "isCorrect": true
-      },
-      {
-        "label": "Selva",
-        "isCorrect": false
+        "type": "multiple-picture",
+        "label": "Identifica cual de estas imagenes es una iglesia?",
+        "answers": [
+          {
+            "label": "",
+            "isCorrect": true,
+            "src": "https://img.icons8.com/?size=100&id=opaHJ7vkO27Q&format=png&color=000000"
+          },
+          {
+            "label": "",
+            "isCorrect": false,
+            "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Restaurante.png"
+          },
+          {
+            "label": "",
+            "isCorrect": false,
+            "src": "https://images.freeimages.com/fic/images/icons/2718/pretty_office_icon_set_part_11/512/shop.png"
+          },
+          {
+            "label": "",
+            "isCorrect": false,
+            "src": "https://cdn-icons-png.flaticon.com/512/1908/1908047.png"
+          }
+        ]
       }
     ]
   },
   {
-    "type": "multiple-picture",
-    "label": "Identifica cual de estas imagenes es una iglesia?",
-    "answers": [
+    "level": 2,
+    "question": [
       {
-        "label": "",
-        "isCorrect": true,
-        "src": "https://img.icons8.com/?size=100&id=opaHJ7vkO27Q&format=png&color=000000"
+        "type": "multiple-option",
+        "label": "Cual es el nombre del 3 hijo de Adan?",
+        "answers": [
+          {
+            "label": "Set",
+            "isCorrect": true
+          },
+          {
+            "label": "Cain",
+            "isCorrect": false
+          },
+          {
+            "label": "Abel",
+            "isCorrect": false
+          },
+          {
+            "label": "Jesus",
+            "isCorrect": false
+          }
+        ]
       },
       {
-        "label": "",
-        "isCorrect": false,
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Restaurante.png"
-      },
-      {
-        "label": "",
-        "isCorrect": false,
-        "src": "https://images.freeimages.com/fic/images/icons/2718/pretty_office_icon_set_part_11/512/shop.png"
-      },
-      {
-        "label": "",
-        "isCorrect": false,
-        "src": "https://cdn-icons-png.flaticon.com/512/1908/1908047.png"
-      }
-    ]
-  },
-  {
-    "type": "multiple-option",
-    "label": "Cual es el nombre del 3 hijo de Adan?",
-    "answers": [
-      {
-        "label": "Set",
-        "isCorrect": true
-      },
-      {
-        "label": "Cain",
-        "isCorrect": false
-      },
-      {
-        "label": "Abel",
-        "isCorrect": false
-      },
-      {
-        "label": "Jesus",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "type": "multiple-picture",
-    "label": "Cual de estas personas crees que es jesus?",
-    "answers": [
-      {
-        "label": "",
-        "isCorrect": false,
-        "src": "https://img.icons8.com/?size=100&id=72hCYmzFak4U&format=png&color=000000"
-      },
-      {
-        "label": "",
-        "isCorrect": false,
-        "src": "https://img.icons8.com/?size=100&id=13519&format=png&color=000000"
-      },
-      {
-        "label": "",
-        "isCorrect": true,
-        "src": "https://img.icons8.com/?size=100&id=zVFJHUkYqSBL&format=png&color=000000"
-      },
-      {
-        "label": "",
-        "isCorrect": false,
-        "src": "https://img.icons8.com/?size=100&id=dHwRlXGbYvTD&format=png&color=000000"
-      }
-    ]
-  },
-  {
-    "type": "multiple-option",
-    "label": "Porque de tal manera amo Dios al ............ que dio su unico hijo, para que todo aquel que en el crea, no se pierda si no tenga vida eterna. (Juan 3:16)",
-    "answers": [
-      {
-        "label": "Padre",
-        "isCorrect": false
-      },
-      {
-        "label": "Madre",
-        "isCorrect": false
-      },
-      {
-        "label": "Mundo",
-        "isCorrect": true
-      },
-      {
-        "label": "Pastor",
-        "isCorrect": false
+        "type": "multiple-option",
+        "label": "Porque de tal manera amo Dios al ............ que dio su unico hijo, para que todo aquel que en el crea, no se pierda si no tenga vida eterna. (Juan 3:16)",
+        "answers": [
+          {
+            "label": "Padre",
+            "isCorrect": false
+          },
+          {
+            "label": "Madre",
+            "isCorrect": false
+          },
+          {
+            "label": "Mundo",
+            "isCorrect": true
+          },
+          {
+            "label": "Pastor",
+            "isCorrect": false
+          }
+        ]
       }
     ]
   }
 ]
+
+
