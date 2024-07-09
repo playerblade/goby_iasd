@@ -1,0 +1,10 @@
+<nav>
+  <img src="../../../assets/figures/closed.drawio.png" alt="" (click)="close()">
+  <div class="bar" >
+    <span>.</span>
+    <div class="progress" [ngStyle]="{'width': road + '%' }" ><span>.</span></div>
+<!--    <div class="progress-item" [ngStyle]="{'width': '0' }"><span>.</span></div>-->
+  </div>
+  <img src="../../../assets/figures/heart.drawio.png" alt="">
+  <p>{{actualLife}}</p>
+</nav>

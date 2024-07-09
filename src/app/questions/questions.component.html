@@ -1,0 +1,27 @@
+<!--<button (click)="next({step: 2, life: 90})">Next</button>-->
+<app-bar-progress [actualLife]="life" [road]="road" ></app-bar-progress>
+<app-multiple-option
+  *ngIf="question && question.type === 'multiple-option'"
+  [question]="question"
+  [step]="step"
+  [life]="life"
+  [road]="road"
+  (continue)="next($event)"
+></app-multiple-option>
+<app-multiple-picture
+  *ngIf="question && question.type === 'multiple-picture'"
+  [question]="question"
+  [step]="step"
+  [life]="life"
+  [road]="road"
+  (continue)="next($event)"
+></app-multiple-picture>
+<main *ngIf="endQuestion">
+  <audio #audioRef src="assets/songs/complete.aac"></audio>
+  <h3>Finalizaste con <span style="color: #00ccbb">" {{life}} "</span> vidas!</h3>
+  <br><br>
+  <button type="button" [routerLink]="['/']" class="btn btn-primary">
+    CONTINUAR
+  </button>
+</main>
+
