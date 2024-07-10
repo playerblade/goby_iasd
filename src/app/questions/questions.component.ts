@@ -17,7 +17,7 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
   public life: number;
   public road: number;
   public level: number;
-  // private audio!: HTMLAudioElement;
+  private audio!: HTMLAudioElement;
   public isShake = false;
   public nextLevel = false;
   @ViewChild('audioRef',{static: false}) audioRef!: ElementRef<HTMLAudioElement>;
@@ -33,13 +33,15 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
   }
 
   ngOnInit(): void {
-    // this.audio = new Audio('assets/songs/complete.aac');
+    this.audio = new Audio('assets/songs/background.m4a');
+    this.audio.play();
     this.nextQuestion();
   }
 
   ngAfterViewChecked() {
     if (this.audioRef && this.audioRef.nativeElement) {
       this.audioRef.nativeElement.play();
+      this.audio.pause();
     }
   }
 

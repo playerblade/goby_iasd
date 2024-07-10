@@ -4,7 +4,7 @@
     "question": [
       {
         "type": "multiple-option",
-        "label": "Cuantos dioes hay? (Genesis 4:6)",
+        "label": "Cuantos Dioses hay? (Genesis 4:6)",
         "answers": [
           {
             "label": "Tres Dioses",
@@ -26,7 +26,7 @@
       },
       {
         "type": "multiple-option",
-        "label": "Cual es la naturaleza de Dios (S. Juan 4:24)",
+        "label": "Cual es la naturaleza de Dios? (S. Juan 4:24)",
         "answers": [
           {
             "label": "Amor",
@@ -44,7 +44,7 @@
       },
       {
         "type": "multiple-option",
-        "label": "Cueles son la tres personas de la Trinidad? (2. Corintios 13:14)",
+        "label": "Cuales son la tres personas de la Trinidad? (2. Corintios 13:14)",
         "answers": [
           {
             "label": "Los apostoles",
@@ -252,7 +252,7 @@
       },
       {
         "type": "multiple-option",
-        "label": "Ques es la oracion? (1 Samuel 1:9-15)",
+        "label": "Que es la oracion? (1 Samuel 1:9-15)",
         "answers": [
           {
             "label": "Recitar",
