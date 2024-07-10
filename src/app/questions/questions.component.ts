@@ -23,7 +23,7 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
   @ViewChild('audioRef',{static: false}) audioRef!: ElementRef<HTMLAudioElement>;
 
   constructor(private _form:FormService) {
-    this.life = 5;
+    this.life = 15;
     this.step = 0;
     this.road = 0;
     this.level = 0;
@@ -78,7 +78,7 @@ export class QuestionsComponent implements OnInit, AfterViewChecked {
   public continueQuestions() {
     this.nextLevel = false;
   }
-  
+
   shakeMethod() {
     this.isShake = true;
     setTimeout(() => {

@@ -15,6 +15,7 @@ export class MultiplePictureComponent implements OnInit {
 
   public answered:boolean = false;
   public answerSelected!:answer;
+  @Input() level!: number;
 
   constructor() { }
 

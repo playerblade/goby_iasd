@@ -3,6 +3,7 @@ export interface DataSourseQuestions {
     question?: Question[];
 }
 export interface Question{
+    level: number;
     type:string;
     label:string;
     answers:answer[];

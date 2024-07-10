@@ -13,7 +13,7 @@ export class MultipleOptionComponent implements OnInit {
   @Input() life!: number;
   @Input() road!: number;
   @Output() continue = new EventEmitter();
-
+  @Input() level!: number;
 
   public answered:boolean = false;
   public answerSelected!:answer;

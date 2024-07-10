@@ -4,49 +4,107 @@
     "question": [
       {
         "type": "multiple-option",
-        "label": "En el princio dios creo los cielos y la ................. (Genesis 1:1)",
+        "label": "Cuantos dioes hay? (Genesis 4:6)",
         "answers": [
           {
-            "label": "Agua",
+            "label": "Tres Dioses",
             "isCorrect": false
           },
           {
-            "label": "Aire",
+            "label": "Muchos Dioses",
             "isCorrect": false
           },
           {
-            "label": " Tierra",
+            "label": " Un solo Dios",
             "isCorrect": true
           },
           {
-            "label": "Selva",
+            "label": "Dos Dioses",
             "isCorrect": false
           }
         ]
       },
       {
-        "type": "multiple-picture",
-        "label": "Identifica cual de estas imagenes es una iglesia?",
+        "type": "multiple-option",
+        "label": "Cual es la naturaleza de Dios (S. Juan 4:24)",
         "answers": [
           {
-            "label": "",
-            "isCorrect": true,
-            "src": "https://img.icons8.com/?size=100&id=opaHJ7vkO27Q&format=png&color=000000"
+            "label": "Amor",
+            "isCorrect": false
           },
           {
-            "label": "",
-            "isCorrect": false,
-            "src": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Restaurante.png"
+            "label": "Padre, Hijo, Espiritu Santo",
+            "isCorrect": false
           },
           {
-            "label": "",
-            "isCorrect": false,
-            "src": "https://images.freeimages.com/fic/images/icons/2718/pretty_office_icon_set_part_11/512/shop.png"
+            "label": " Espiritu y verdad",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Cueles son la tres personas de la Trinidad? (2. Corintios 13:14)",
+        "answers": [
+          {
+            "label": "Los apostoles",
+            "isCorrect": false
           },
           {
-            "label": "",
-            "isCorrect": false,
-            "src": "https://cdn-icons-png.flaticon.com/512/1908/1908047.png"
+            "label": "Mateo, Marcos, Juan",
+            "isCorrect": false
+          },
+          {
+            "label": " Judas, Saqueo, Maria",
+            "isCorrect": false
+          },
+          {
+            "label": "Hijo, Padre, Espiritu Santo",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Como es el caracter de Dios? (1 Juan 4:8)",
+        "answers": [
+          {
+            "label": "Santidad",
+            "isCorrect": false
+          },
+          {
+            "label": "Bondad",
+            "isCorrect": false
+          },
+          {
+            "label": " Amor",
+            "isCorrect": true
+          },
+          {
+            "label": "Verdad",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Como nos considera Dios? (1 Juan 3:1,2)",
+        "answers": [
+          {
+            "label": "Hijos de Dios",
+            "isCorrect": true
+          },
+          {
+            "label": "Desconocidos",
+            "isCorrect": false
+          },
+          {
+            "label": " Pecadores",
+            "isCorrect": false
+          },
+          {
+            "label": "Desobedientes",
+            "isCorrect": false
           }
         ]
       }
@@ -57,44 +115,225 @@
     "question": [
       {
         "type": "multiple-option",
-        "label": "Cual es el nombre del 3 hijo de Adan?",
+        "label": "Quien revelo la santa escritura? (2 Timoteo 3:16)",
         "answers": [
           {
-            "label": "Set",
+            "label": "Inspirado por Dios",
             "isCorrect": true
           },
           {
-            "label": "Cain",
+            "label": "Inspirado por el hombre",
             "isCorrect": false
           },
           {
-            "label": "Abel",
+            "label": "Satanas",
             "isCorrect": false
           },
           {
-            "label": "Jesus",
+            "label": "Moises",
             "isCorrect": false
           }
         ]
       },
       {
         "type": "multiple-option",
-        "label": "Porque de tal manera amo Dios al ............ que dio su unico hijo, para que todo aquel que en el crea, no se pierda si no tenga vida eterna. (Juan 3:16)",
+        "label": "Quienes recibieron la revelacion? (Hebreos 1:1)",
         "answers": [
           {
-            "label": "Padre",
+            "label": "Adan y Eva",
             "isCorrect": false
           },
           {
-            "label": "Madre",
+            "label": "Los hijos de Dios",
             "isCorrect": false
           },
           {
-            "label": "Mundo",
+            "label": "Los profetas",
             "isCorrect": true
           },
           {
-            "label": "Pastor",
+            "label": "Los catolicos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "A que se compara la Santa Biblia? (Salmos 119:115)",
+        "answers": [
+          {
+            "label": "A sal del mundo",
+            "isCorrect": false
+          },
+          {
+            "label": "Al arbol de la vida",
+            "isCorrect": false
+          },
+          {
+            "label": "Lampara es a mis pies, y Lumbrera a en mi camino",
+            "isCorrect": true
+          },
+          {
+            "label": "Al santuario de Israel",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Que bendiciones da la Santa Biblia? (Ramos 15:4)",
+        "answers": [
+          {
+            "label": "Alegria",
+            "isCorrect": false
+          },
+          {
+            "label": "Paz",
+            "isCorrect": false
+          },
+          {
+            "label": "Sabiduria",
+            "isCorrect": false
+          },
+          {
+            "label": "Esperanza",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Cuanto tiempo perdurara la Santa Biblia? (Isaia 40:8)",
+        "answers": [
+          {
+            "label": "Poco tiempo",
+            "isCorrect": false
+          },
+          {
+            "label": "Para siempre",
+            "isCorrect": true
+          },
+          {
+            "label": "Hasta la muerte",
+            "isCorrect": false
+          },
+          {
+            "label": "Hasta que el venga",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "question": [
+      {
+        "type": "multiple-option",
+        "label": "Como nos comunicamos con Dios? (Daniel 9:3)",
+        "answers": [
+          {
+            "label": "Oracion",
+            "isCorrect": true
+          },
+          {
+            "label": "Llamadas telefonicas",
+            "isCorrect": false
+          },
+          {
+            "label": "Por medio del pastor",
+            "isCorrect": false
+          },
+          {
+            "label": "Por medio de nuestros padres",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Ques es la oracion? (1 Samuel 1:9-15)",
+        "answers": [
+          {
+            "label": "Recitar",
+            "isCorrect": false
+          },
+          {
+            "label": "Hablar en Lenguas",
+            "isCorrect": false
+          },
+          {
+            "label": "Hablar con Dios",
+            "isCorrect": true
+          },
+          {
+            "label": "Hablar con los muertos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Cuanto poder tiene la oracion sincera? (Santiago 5:16)",
+        "answers": [
+          {
+            "label": "Depende",
+            "isCorrect": false
+          },
+          {
+            "label": "Nada",
+            "isCorrect": false
+          },
+          {
+            "label": "Mucho",
+            "isCorrect": true
+          },
+          {
+            "label": "Poco",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "En nombre de quien debemos orar? (S. Juan 14:13)",
+        "answers": [
+          {
+            "label": "En tu nombre",
+            "isCorrect": false
+          },
+          {
+            "label": "En Nombre del Espiritu Santo",
+            "isCorrect": false
+          },
+          {
+            "label": "En nombre del Hijo",
+            "isCorrect": false
+          },
+          {
+            "label": "En nombre del Padre",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "type": "multiple-option",
+        "label": "Contesta Dios las Oraciones? (S. Mateo 7:7-11)",
+        "answers": [
+          {
+            "label": "No",
+            "isCorrect": false
+          },
+          {
+            "label": "Si",
+            "isCorrect": true
+          },
+          {
+            "label": "Aveces",
+            "isCorrect": false
+          },
+          {
+            "label": "Solo en la Noche",
             "isCorrect": false
           }
         ]

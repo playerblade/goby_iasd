@@ -21,7 +21,7 @@ export class CorrectMessageComponent implements OnInit {
 
   next(){
     this.step++;
-    this.road+=20;
+    this.road+=7.3;
     this.currentEvent = {'step': this.step, 'life': this.life, 'road': this.road};
     this.continue.emit(this.currentEvent);
   }

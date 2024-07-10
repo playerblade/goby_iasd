@@ -2,11 +2,14 @@
 <!-- <nav class="zoom-in">
   <h2 style="text-align: center; margin-top: 1em;">Level {{level+1}}</h2>
 </nav> -->
-<nav *ngIf="!nextLevel" [ngClass]="{'shake': isShake}">
-  <h2 style="text-align: center; margin-top: 1em;">Level {{level+1}}</h2>
+<nav *ngIf="!nextLevel">
+  <h2 style="text-align: center; margin-top: 1em;">Leccion {{level+1}}</h2>
 </nav>
+<!--<nav *ngIf="!nextLevel" [ngClass]="{'shake': isShake}">-->
+<!--  <h2 style="text-align: center; margin-top: 1em;">Level {{level+1}}</h2>-->
+<!--</nav>-->
 <div *ngIf="!endQuestion && !nextLevel">
-  <app-bar-progress [actualLife]="life" [road]="road" ></app-bar-progress>
+  <app-bar-progress [actualLife]="life" [road]="road"  ></app-bar-progress>
   <app-multiple-option
     *ngIf="question && question.type === 'multiple-option'"
     [question]="question"
@@ -26,7 +29,7 @@
 </div>
 
 <main *ngIf="!endQuestion && nextLevel" style="margin-top: 1em;">
-  <h3>Deseas continuar con el siguiente nivel?!</h3>
+  <h3>Deseas continuar con la siguiente Leccion?</h3>
   <br><br>
   <button type="button" (click)="continueQuestions()" class="btn btn-primary">
     CONTINUAR
